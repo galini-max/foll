@@ -21,7 +21,7 @@ POSTING_KEY = env("STEEM_POSTING_KEY")
 DRY_RUN = env("DRY_RUN", "true").lower() != "false"
 MAX_PER_RUN = int(env("MAX_PER_RUN", "25"))
 MAX_PER_DAY = int(env("MAX_PER_DAY", "500"))
-MIN_RC_PCT = float(env("MIN_RC_PCT", "5"))               # stop when RC mana falls below this %
+MIN_RC_PCT = float(env("MIN_RC_PCT", "4"))               # stop when RC mana falls below this %
 LOOKBACK_BLOCKS = int(env("LOOKBACK_BLOCKS", "10000"))   # first run: about 8 hours (3 sec per block)
 SCAN_BLOCKS_MAX = int(env("SCAN_BLOCKS_MAX", "10000"))   # per run (3 sec per block)
 BATCH_SIZE = int(env("BATCH_SIZE", "50"))                # blocks per batched request
